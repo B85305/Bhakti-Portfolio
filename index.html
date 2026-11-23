@@ -1,0 +1,315 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhakti Rajguru | Data Analyst Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #111827;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .profile {
+            min-width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #164e63;
+            color: #67e8f9;
+            display: grid;
+            place-items: center;
+            font-size: 45px;
+            font-weight: bold;
+            border: 3px solid #38bdf8;
+        }
+
+        h1 {
+            font-size: 45px;
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            color: #38bdf8;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #172033;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #263449;
+        }
+
+        .card h3 {
+            color: #67e8f9;
+            margin-bottom: 10px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #38bdf8;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #172033;
+            border: 1px solid #334155;
+            padding: 10px 18px;
+            margin: 7px;
+            border-radius: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111827;
+        }
+
+        a {
+            color: #38bdf8;
+        }
+
+        @media(max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 7px;
+                font-size: 13px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">BR.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="profile">BR</div>
+    <div>
+        <p class="highlight">HELLO, WELCOME TO MY PORTFOLIO</p>
+        <h1>I'm Bhakti Rajguru</h1>
+        <h2>Data Analytics Enthusiast</h2>
+        <p>
+            Third-year B.Tech Artificial Intelligence and
+            Data Science student, passionate about data,
+            technology and solving real-world problems.
+        </p>
+        <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a B.Tech student specializing in Artificial
+        Intelligence and Data Science at Matoshri College
+        of Engineering and Research Center, Nashik.
+    </p>
+    <p>
+        I enjoy working with data, discovering meaningful
+        insights and developing analytical solutions.
+        I am looking for internship opportunities where
+        I can improve my technical skills and gain
+        practical industry experience.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Excel</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Matplotlib</span>
+        <span>Machine Learning</span>
+        <span>Data Visualization</span>
+        <span>Streamlit</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Global Economic Insights</h3>
+            <p>Interactive World Bank economic dashboard using Python and Streamlit.</p>
+            <a href="https://github.com/B85305/global-economic-insights" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Customer Sentiment Analysis</h3>
+            <p>Analyze customer reviews using Python, NLP, NLTK, VADER and Streamlit.</p>
+            <a href="https://github.com/B85305/sentiment-analysis" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Netflix Discover</h3>
+            <p>Movie and TV show discovery application using Streamlit, Pandas and TMDB API.</p>
+            <a href="https://github.com/B85305/Netflix-Discover" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>BookFinder Web Scraping</h3>
+            <p>BookFinder website developed using Python web scraping.</p>
+            <a href="https://github.com/B85305/WebScraping" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Iris Flower Classification</h3>
+            <p>Machine learning project for classifying iris flowers.</p>
+            <a href="https://github.com/B85305/CodeAlpha_Iris_Flower_Classification.ipynb" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Car Price Prediction</h3>
+            <p>Machine learning project for predicting car prices.</p>
+            <a href="https://github.com/B85305/car_price_prediction.ipynb" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Unemployment Analysis</h3>
+            <p>Data analysis project exploring unemployment trends.</p>
+            <a href="https://github.com/B85305/unemployment_analysis.ipynb" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>ElderCare AI Guardian</h3>
+            <p>AI-based elderly monitoring and fall detection project.</p>
+            <a href="https://github.com/B85305/ElderCare-AI-Guardian-2026" target="_blank">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Python Conditional Statements</h3>
+            <p>30 Python programs covering conditions and logical operations.</p>
+            <a href="https://github.com/B85305/Python-Conditional-Statements" target="_blank">View Project →</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:bhaktirajguru076@gmail.com">bhaktirajguru076@gmail.com</a></p>
+    <p>Location: Nashik, Maharashtra</p>
+    <p>GitHub: <a href="https://github.com/B85305" target="_blank">My GitHub</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/bhakti-rajguru-423167340/" target="_blank">Visit My LinkedIn</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Bhakti Rajguru | Data Analyst Portfolio</p>
+</footer>
+
+</body>
+</html>
